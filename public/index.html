@@ -7,15 +7,67 @@
 		<link rel="stylesheet" href="css/tailwindStyles.css" />
 		<title>Inventory App</title>
 	</head>
-	<body class="w-full">
+	<body class="flex w-full flex-col items-center justify-center">
 		<!-- show app title and nuber of products -->
-		<header class="flex h-12 w-full items-center justify-between bg-slate-700 px-3 text-white">
-			<p class="font-bold text-lg tracking-wider">Inventory App</p>
+		<header
+			class="fixed top-0 flex h-12 w-full items-center justify-between bg-slate-700 px-3 text-white"
+		>
+			<p class="text-lg font-bold tracking-wider">Inventory App</p>
 
 			<span
 				class="flex h-6 w-6 items-center justify-center rounded-full bg-slate-900 font-semibold"
 				>1</span
 			>
 		</header>
+
+		<main class="min-h-screen w-full bg-slate-800 px-3 pt-16">
+			<!-- add category section -->
+			<section class="items-start text-slate-300">
+				<div class="mb-2 flex items-center justify-between">
+					<p class="font-semibold">Add New Category</p>
+					<button id="collapse-btn">
+						<img src="/src/icons/icons8-collapse-arrow-24.png" alt="collapse arrow" />
+					</button>
+				</div>
+
+				<div class="rounded-lg bg-slate-900 p-2">
+					<!-- category title section -->
+					<div class="my-1">
+						<label for="category-title" class="my-1 block font-medium">title</label>
+						<input
+							type="text"
+							name="category-title"
+							id="category-title"
+							class="w-full rounded-md border-1 bg-transparent text-sm"
+						/>
+					</div>
+
+					<!-- category description section -->
+					<div class="my-1">
+						<label for="category-description" class="my-1 block font-medium"
+							>description</label
+						>
+						<textarea
+							id="category-description"
+							class="w-full rounded-md border-1 bg-transparent text-sm"
+						></textarea>
+					</div>
+
+					<!-- cancel and add new category btn -->
+					<div class="my-3 flex items-center justify-between gap-x-2 text-sm">
+						<button
+							class="flex-1 rounded-lg border-1 border-red-600 py-1.5 text-red-600 hover:bg-red-500 hover:text-white"
+						>
+							Cancel
+						</button>
+						<button
+							class="flex-1 rounded-lg border-1 bg-slate-700 py-1.5 hover:bg-slate-800"
+						>
+							Add new Category
+						</button>
+					</div>
+				</div>
+			</section>
+		</main>
 	</body>
 </html>
