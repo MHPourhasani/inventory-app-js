@@ -68,6 +68,69 @@
 					</div>
 				</div>
 			</section>
+
+			<!-- add product section -->
+			<section class="my-5 items-start text-slate-300">
+				<div class="mb-2 flex items-center justify-between">
+					<p class="font-semibold">Add New Product</p>
+					<button id="collapse-btn">
+						<img src="/src/icons/icons8-collapse-arrow-24.png" alt="collapse arrow" />
+					</button>
+				</div>
+
+				<div class="rounded-lg bg-slate-900 p-2">
+					<!-- category title section -->
+					<div class="my-1">
+						<label for="product-title" class="my-1 block font-medium">title</label>
+						<input
+							type="text"
+							name="product-title"
+							id="product-title"
+							class="w-full rounded-md border-1 bg-transparent text-sm"
+						/>
+					</div>
+
+					<!-- category description section -->
+					<div class="my-1">
+						<label for="product-quantity" class="my-1 block font-medium"
+							>quantity</label
+						>
+						<input
+							type="number"
+							name="product-number"
+							id="product-number"
+							class="w-full rounded-md border-1 bg-transparent text-sm"
+						/>
+					</div>
+
+					<div class="my-1 w-full">
+						<label for="category-select" class="my-1 block font-medium">category</label>
+						<select
+							id="category-select"
+							class="w-full rounded-md bg-transparent text-sm font-medium"
+						>
+							<option value="select" class="bg-slate-800 hover:bg-slate-700">
+								Select Category ...
+							</option>
+							<option value="react" class="bg-slate-800 hover:bg-slate-700">
+								Frontend
+							</option>
+							<option value="node" class="bg-slate-800 hover:bg-slate-700">
+								Backend
+							</option>
+						</select>
+					</div>
+
+					<!-- add new product btn -->
+					<div class="my-5 flex items-center justify-center text-sm">
+						<button
+							class="flex-1 rounded-md border-1 bg-slate-700 py-2 hover:bg-slate-800"
+						>
+							Add new Product
+						</button>
+					</div>
+				</div>
+			</section>
 		</main>
 	</body>
 </html>
